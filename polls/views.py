@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
-	return HttpResponse("Helloooooo Nurse!")
-	
+def home(request):
+	return render(request, 'blog/home.html', {})
+
+def blog(request):
+	return render(request, 'blog/blog.html', {})

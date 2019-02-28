@@ -25,7 +25,10 @@ SECRET_KEY = 'q^q&+jxnxx=e@@pq_g$@37-9uu2f$*zl-bt6qczgiiul01#fiu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['python-test-deploy.herokuapp.com']
+ALLOWED_HOSTS = [
+    'python-test-deploy.herokuapp.com',
+    'localhost',
+]
 
 
 # Application definition
@@ -37,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'polls',
 ]
 
 MIDDLEWARE = [
